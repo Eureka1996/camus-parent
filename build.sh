@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#mvn clean package -Dmaven.test.skip=true
+mvn clean package -Dmaven.test.skip=true
 
 [ -d release ] && { rm -rf release; }
 mkdir release
