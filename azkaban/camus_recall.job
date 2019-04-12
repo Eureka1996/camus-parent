@@ -1,0 +1,2 @@
+type=command
+command=bash start_recall.sh
