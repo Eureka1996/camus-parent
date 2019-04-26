@@ -505,6 +505,7 @@ public class EtlInputFormat extends InputFormat<EtlKey, CamusWrapper> {
 					EtlRequest request = new EtlRequest(context,
 							key.getTopic(), key.getLeaderId(),
 							key.getPartition());
+					log.info("read offset info:" + key.toString());
 					if (offsetKeysMap.containsKey(request)) {
 
 						EtlKey oldKey = offsetKeysMap.get(request);
